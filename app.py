@@ -8,6 +8,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy import signal
 
+FONTSIZE = 15
+
 # 変調度
 m = 2
 
@@ -59,5 +61,7 @@ plt.grid(True, which='both', axis='both')
 plt.xlabel('Time [ms]')
 plt.ylabel('Voltage [mV]')
 
-plt.legend()
+plt.legend(fontsize=FONTSIZE)
+plt.xticks(fontsize=FONTSIZE)
+plt.yticks(fontsize=FONTSIZE)
 plt.show()

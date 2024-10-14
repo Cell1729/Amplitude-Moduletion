@@ -57,6 +57,7 @@ plt.plot(t, base_line, label='base')
 
 # グラフの書式設定
 plt.minorticks_on()
+plt.suptitle(f'modulation index m={m}')
 plt.grid(True, which='both', axis='both')
 plt.xlabel('Time [ms]')
 plt.ylabel('Voltage [mV]')

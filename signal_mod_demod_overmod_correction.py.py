@@ -52,12 +52,12 @@ ax.yaxis.set_ticks_position('left')
 
 # グラフの描画
 plt.plot(t, v_am, label='modulation')
-plt.plot(t, v_d, label='demodulation(incorrect)')
+plt.plot(t, v_d, label='incorrect envelope')
 
 # 過変調したときの正しい包絡線を描画
 if m > 1:
     v_correct = 4 * np.cos(2 * np.pi * f_s * t) + 2
-    plt.plot(t, v_correct, label='corecct')
+    plt.plot(t, v_correct, label='corecct envelope', linestyle='--')
 
 # グラフの書式設定
 plt.minorticks_on()
